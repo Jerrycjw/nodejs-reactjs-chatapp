@@ -1,6 +1,6 @@
 import {MongoClient} from 'mongodb'
 
-const URL = 'mongodb://localhost/chatapp';
+const URL = 'mongodb://localhost:27017/chatapp';
 
 
 export default class Database{

@@ -3,7 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import {version} from '../package.json'
-import WebSocketServer, {Server} from 'ws';
+import WebSocketServer, {Server} from 'uws';
 import AppRouter from './app-router'
 import Model from './models'
 import Database from './database'
