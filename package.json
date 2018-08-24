@@ -2,6 +2,8 @@
   "name": "foobar-app",
   "version": "0.1.0",
   "scripts": {
-    "postinstall": "npm install --prefix server && npm install --prefix app"
+    "start": "npm start --prefix server",
+    "postinstall": "npm install --prefix server && npm install --prefix app",
+    "heroku-postbuild": "cd app && npm start --prefix app"
   }
 }
