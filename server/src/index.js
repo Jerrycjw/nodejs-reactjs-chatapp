@@ -14,7 +14,7 @@ const app = express();
 app.server = http.createServer(app);
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.resolve(__dirname, '../../app/build')));
 
 //app.use(morgan('dev'));
 
