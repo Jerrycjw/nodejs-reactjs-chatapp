@@ -13,6 +13,8 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 app.server = http.createServer(app);
 
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'app/build')));
 
 //app.use(morgan('dev'));
 
