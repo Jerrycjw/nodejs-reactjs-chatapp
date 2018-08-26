@@ -24,7 +24,9 @@ export default class AppRouter {
 
         console.log("APp ROuter works!");
 
-
+        app.get('/api/', (req, res, next) => {
+           return "123";
+        });
 
         /**
          * @endpoint: /api/users
