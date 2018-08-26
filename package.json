@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "start": "npm start --prefix server",
-    "postinstall": "npm install --prefix server && npm install --prefix app",
+    "postinstall": "npm install --prefix server && npm install --prefix app"
   },
   "engines": {
     "node": "8.9.4"
