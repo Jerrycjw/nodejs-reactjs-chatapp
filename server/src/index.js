@@ -9,7 +9,7 @@ import Model from './models'
 import Database from './database'
 import path from 'path'
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3000;
 const app = express();
 app.server = http.createServer(app);
 
