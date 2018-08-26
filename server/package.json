@@ -25,7 +25,7 @@
     }
   },
   "dependencies": {
-    "bcrypt": "^1.0.3",
+    "bcrypt": "^3.0.0",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
@@ -34,7 +34,7 @@
     "moment": "^2.19.3",
     "mongodb": "^2.2.33",
     "morgan": "^1.9.0",
-    "uws": "^9.14.0"
+    "ws": "^6.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
