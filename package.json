@@ -4,7 +4,7 @@
   "scripts": {
     "start": "npm start --prefix server",
     "postinstall": "npm install --prefix server && npm install --prefix app",
-    "heroku-postbuild": "npm start --prefix app"
+    "heroku-postbuild": "npm run build --prefix app"
   },
   "engines": {
     "node": "8.9.4"
