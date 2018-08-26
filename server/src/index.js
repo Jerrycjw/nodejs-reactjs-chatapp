@@ -18,7 +18,6 @@ app.use(express.static(path.join(__dirname, 'app/build')));
 
 //app.use(morgan('dev'));
 
-
 app.use(cors({
     exposedHeaders: "*"
 }));
@@ -33,11 +32,6 @@ app.wss = new Server({
 	server: app.server
 });
 
-
-// static www files use express
-const wwwPath = path.join(__dirname, 'www');
-
-app.use('/', express.static(wwwPath));
 
 // Connect to Mongo Database
 

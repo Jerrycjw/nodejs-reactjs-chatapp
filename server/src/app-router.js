@@ -1,5 +1,6 @@
 import moment from 'moment';
 import _ from 'lodash'
+import path from 'path'
 
 
 export const START_TIME = new Date();
@@ -24,8 +25,12 @@ export default class AppRouter {
 
         console.log("APp ROuter works!");
 
+        app.get('*', (req, res) => {
+            res.sendFile(path.join(__dirname+'/app/build/index.html'));
+        });
+
         app.get('/api/', (req, res, next) => {
-           return "123";
+            res.send('Birds home page')
         });
 
         /**
