@@ -25,14 +25,6 @@ export default class AppRouter {
 
         console.log("APp ROuter works!");
 
-        app.get('*', (req, res) => {
-            res.sendFile(path.resolve(__dirname, '../../app/build', 'index.html'));
-        });
-
-        app.get('/api/', (req, res, next) => {
-            res.send('Birds home page')
-        });
-
         /**
          * @endpoint: /api/users
          * @method: POST
@@ -423,8 +415,11 @@ export default class AppRouter {
 
 
 
-        })
+        });
 
+        app.get('*', (req, res) => {
+            res.sendFile(path.resolve(__dirname, '../../app/build', 'index.html'));
+        });
 
     }
 }
