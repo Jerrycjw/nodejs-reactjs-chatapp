@@ -9,7 +9,7 @@ export default class Message {
         this.messages = new OrderedMap();
     }
 
-    getChannelMessages(channelId, limit = 50, offset = 0){
+    getChannelMessages(channelId, limit, offset = 0){
 
         return new Promise((resolve, reject) => {
 

@@ -241,7 +241,7 @@ export default class AppRouter {
                 }
 
                 const channelId = _.toString(_.get(req, 'params.id'));
-                const limit = _.get(filter, 'limit', 50);
+                const limit = _.get(filter, 'limit', 2000);
                 const offset = _.get(filter, 'offset', 0);
 
 
