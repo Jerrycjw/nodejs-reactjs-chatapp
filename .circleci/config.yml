@@ -7,4 +7,4 @@ jobs:
     - checkout # check out the code in the project directory
     - run:
         name: Running Test
-        command: npm test --prefix app
+        command: npm install; npm test --prefix app
